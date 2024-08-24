@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+}
+
+#container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center; /* Center the content horizontally */
+    max-width: 1000px; /* Increased max-width for more space */
+    margin: 0 auto;
+}
+
+#dictionaryContainer {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    max-width: 60%; /* Adjusted width to give more space to the display area */
+    margin-right: 20px;
+}
+
+.column {
+    width: 60px; /* Width of columns */
+    height: 300px; /* Height of columns */
+    overflow-y: scroll;
+    border: 1px solid #ddd;
+    margin-right: 10px; /* Margin between columns */
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px; /* Padding at the bottom of columns */
+}
+
+.display {
+    width: 400px; /* Fixed width for the display area */
+    padding: 15px; /* Padding inside the display area */
+    border: 1px solid #ddd;
+    min-height: 300px; /* Height of the display area */
+    background-color: #fff;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+.kana-item {
+    cursor: pointer;
+    padding: 4px; /* Padding inside each kana item */
+    text-align: center;
+}
+
+#intro {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+#intro p {
+    margin-bottom: 15px;
+}
+
+#intro strong {
+    color: #030303; /* Optional: color for highlighted text */
+}

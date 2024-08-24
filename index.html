@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Japanese Dictionary</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="intro">
+    <p>I’ve often wished there were a way to compare Japanese words that differ by just one or two syllables, or some way to see what combinations of syllables can form a real Japanese word. Because Japanese dictionaries are ordered by kana, the only way to compare words in this way is to flip back and forth through the pages (which gets very tiring very quickly!)</p>
+    <p>This problem inspired me to make <strong>Kumikana</strong>, a different kind of Japanese dictionary. Kumikana comes from <strong>“組み合わせ,”</strong> which means “combination,” combined with <strong>“かな”</strong>. By scrolling through the kana columns, you can easily compare words that differ by only a syllable or two and see what combinations of syllables make up actual words.</p>
+    <p>The sequence of kana at the top of each column is matched to definitions from JMDict, including kanji and kana readings. You can make words shorter than six syllables by using the blank spaces at the top of each column. I hope you find Kumikana helpful in your Japanese studies!</p>
+</div>
+
+  <div id="container">
+    <div id="dictionaryContainer">
+      <div id="column1" class="column"></div>
+      <div id="column2" class="column"></div>
+      <div id="column3" class="column"></div>
+      <div id="column4" class="column"></div>
+      <div id="column5" class="column"></div>
+      <div id="column6" class="column"></div>
+    </div>
+    <div id="displayArea" class="display">Select kana</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
